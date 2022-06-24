@@ -5,16 +5,13 @@ wizard = {
     'power': 50
 }
 
+
 my_list = [1, 2, 3]
 your_list = [10, 20, 30]
 
 
 def attack(character):
     print("attacking...")
-
-
-def multiply_by2(item):
-    return (item * 2)
 
 
 def check_odd(item):
@@ -27,5 +24,5 @@ def accumulator(acc, item):
 
 
 # map, filter, zip and reduce
-print(reduce(accumulator, my_list, 0))
+print(list(map(lambda item: item*2, my_list)))
 print(my_list)
