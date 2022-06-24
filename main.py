@@ -1,3 +1,5 @@
+from functools import reduce
+
 wizard = {
     'name': 'Merlin',
     'power': 50
@@ -19,6 +21,11 @@ def check_odd(item):
     return item % 2 != 0
 
 
+def accumulator(acc, item):
+    print(acc, item)
+    return acc + item
+
+
 # map, filter, zip and reduce
-print(list(zip(my_list, your_list)))
+print(reduce(accumulator, my_list, 0))
 print(my_list)
