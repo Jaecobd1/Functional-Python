@@ -4,6 +4,7 @@ wizard = {
 }
 
 my_list = [1, 2, 3]
+your_list = [10, 20, 30]
 
 
 def attack(character):
@@ -19,5 +20,5 @@ def check_odd(item):
 
 
 # map, filter, zip and reduce
-print(list(filter(check_odd, my_list)))
+print(list(zip(my_list, your_list)))
 print(my_list)
